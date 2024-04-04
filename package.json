@@ -1,12 +1,12 @@
 {
   "name": "aptitudehelpers",
-  "version": "1.1.24",
+  "version": "1.1.25",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npm version patch && tsc && node .",
     "pack": "tsc && node . && npm pack --pack-destination /tmp",
-    "pub": "cd /Users/lucasmoreira/www/aptitudehelpers && npm version patch --force && tsc && node . && npm pack --pack-destination /tmp && cd ~/www/invoicefy/v2/frontend && npm install /tmp/aptitudehelpers-$npm_package_version.tgz && npm run start"
+    "pub": "cd /Users/lucasmoreira/www/aptitudehelpers && npm version patch --force && tsc && node . && npm pack --pack-destination /tmp && cd ~/www/invoicefy/v2/frontend && npm install --save /tmp/aptitudehelpers-$npm_package_version.tgz && npm run start"
   },
   "author": "",
   "license": "ISC",
