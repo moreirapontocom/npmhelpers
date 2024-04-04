@@ -12,7 +12,7 @@ function Alert(props) {
             props.alert.type = '';
         }, 5000);
     }, [props.alert, props.alert.type, props.alert.message]);
-    return (0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: props.alert.type && props.alert.type !== "" && (0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: (0, jsx_runtime_1.jsxs)("div", { className: `echem-alert alert alert-dismissible shadow-sm fade show alert-float alert-${props.alert.type}`, role: "alert", children: [(0, jsx_runtime_1.jsx)("strong", { children: (0, jsx_runtime_1.jsx)("span", { dangerouslySetInnerHTML: { __html: props.alert.message } }) }), (0, jsx_runtime_1.jsx)("button", { type: "button", className: "btn-close", onClick: () => {
+    return (0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: props.alert.type && props.alert.type !== "" && (0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: (0, jsx_runtime_1.jsxs)("div", { className: `echem-alert alert alert-dismissible shadow-sm fade show alert-float alert-${props.alert.type}`, role: "alert", children: [(0, jsx_runtime_1.jsxs)("strong", { children: ["OI 2", (0, jsx_runtime_1.jsx)("span", { dangerouslySetInnerHTML: { __html: props.alert.message } })] }), (0, jsx_runtime_1.jsx)("button", { type: "button", className: "btn-close", onClick: () => {
                             setAlert({ type: '', message: '' });
                             props.alert.type = '';
                         } })] }) }) });
