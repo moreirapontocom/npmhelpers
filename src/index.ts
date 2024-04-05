@@ -10,13 +10,6 @@ export { default as Separator } from "./components/Separator/Separator.component
 export { UserProvider } from "./context/User.context";
 export { UserContext } from "./context/User.context";
 
-// Firebase Login
-export { default as FirebaseEmailPasswordLogin } from "./FirebaseLogin/FirebaseEmailPasswordLoginForm";
-export { firebaseLogout, firebaseEmailPasswordLogin } from "./FirebaseLogin/firebase.service";
-
-// Services
-export { default as signJWT } from "./services/jwt.service";
-
 // Helpers
 export { default as convertFirebaseTimestampToString } from "./helpers/convertFirebaseTimestampToString";
 export { default as sleep } from "./helpers/sleep";
