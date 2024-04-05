@@ -3,9 +3,9 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 interface CustomLinkProps {
   to: string;
   children: any;
-  dataTestIdPrefix: string;
-  classes: string;
-  classActive: string;
+  dataTestIdPrefix?: string;
+  classes?: string;
+  classActive?: string;
 }
 
 const CustomLink = (props: CustomLinkProps) => {
