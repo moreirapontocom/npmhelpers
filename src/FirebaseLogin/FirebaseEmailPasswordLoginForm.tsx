@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { useFormik } from "formik";
 import { UserContext } from "../context/User.context";
-import { firebaseEmailPasswordLogin } from "../services/firebase.service";
+import { firebaseEmailPasswordLogin } from "./firebase.service";
 import Loading from "../components/Loading/Loading.component";
 import * as yup from 'yup';
 

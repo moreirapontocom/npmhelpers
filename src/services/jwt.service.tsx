@@ -1,6 +1,6 @@
 import * as jose from 'jose';
 
-export const signJWT = async (data: any): Promise<any> => {
+const signJWT = async (data: any): Promise<any> => {
     const jwtSecretKey: string = process.env.REACT_APP_JWT_SECRET || "";
     const secret = new TextEncoder().encode(jwtSecretKey)
     const jwt = await new jose.SignJWT(data)
@@ -8,4 +8,6 @@ export const signJWT = async (data: any): Promise<any> => {
         .setIssuedAt()
         .sign(secret);
     return jwt;
-};
+}
+
+export default signJWT;
