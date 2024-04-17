@@ -1,11 +1,13 @@
 {
   "name": "aptitudehelpers",
-  "version": "1.1.52",
+  "version": "1.1.86",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npm version patch && tsc && node .",
-    "pack-local": "cd /Users/lucasmoreira/www/aptitudehelpers && tsc && cd ./src && find . -name '*.scss' | cpio -pdm ../build && cd ../ && cp package.json build/ && cd build/ && npm pack --pack-destination /tmp && cd ~/www/invoicefy/v2/frontend && npm install --save /tmp/aptitudehelpers-$npm_package_version.tgz && npm run start"
+    "build-local": "tsc && node .",
+    "pack-local-run": "cd /Users/lucasmoreira/www/aptitudehelpers && tsc && cd ./src && find . -name '*.scss' | cpio -pdm ../build && cd ../ && cp package.json build/ && cd build/ && npm pack --pack-destination /tmp && cd ~/www/invoicefy/v2/frontend && npm install --save /tmp/aptitudehelpers-$npm_package_version.tgz && npm run start",
+    "pack-local": "cd /Users/lucasmoreira/www/aptitudehelpers && tsc && cd ./src && find . -name '*.scss' | cpio -pdm ../build && cd ../ && cp package.json build/ && cd build/ && npm pack --pack-destination /tmp && cd ~/www/invoicefy/v2/frontend && npm install --save /tmp/aptitudehelpers-$npm_package_version.tgz"
   },
   "author": "",
   "license": "ISC",
