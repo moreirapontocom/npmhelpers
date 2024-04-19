@@ -1,6 +1,6 @@
 {
   "name": "aptitudehelpers",
-  "version": "1.1.88",
+  "version": "1.1.89",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "pack-local-run": "cd /Users/lucasmoreira/www/aptitudehelpers && tsc && cd ./src && find . -name '*.scss' | cpio -pdm ../build && cd ../ && cp package.json build/ && cd build/ && npm pack --pack-destination /tmp && cd ~/www/invoicefy/v2/frontend && npm install --save /tmp/aptitudehelpers-$npm_package_version.tgz && npm run start",
     "pack-local": "cd /Users/lucasmoreira/www/aptitudehelpers && tsc && cd ./src && find . -name '*.scss' | cpio -pdm ../build && cd ../ && cp package.json build/ && cd build/ && npm pack --pack-destination /tmp && cd ~/www/invoicefy/v2/frontend && npm install --save /tmp/aptitudehelpers-$npm_package_version.tgz"
   },
-  "author": "",
+  "author": "Lucas Moreira de Souza",
+  "author_email": "moreirapontocom@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.11.30",
