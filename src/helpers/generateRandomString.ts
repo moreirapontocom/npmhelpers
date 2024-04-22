@@ -1,4 +1,4 @@
-const randomString = (length: number = 10) => {
+const generateRandomString = (length: number = 10) => {
   const dictionary: string = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
   let random: string = "";
   for (let i = 0; i < length; i++) {
@@ -7,4 +7,4 @@ const randomString = (length: number = 10) => {
   return random;
 }
 
-export default randomString;
+export default generateRandomString;

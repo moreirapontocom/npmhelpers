@@ -1,13 +1,12 @@
 {
-  "name": "aptitudehelpers",
+  "name": "npmhelpers",
   "version": "1.1.109",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npm version patch && tsc && node .",
     "build-local": "tsc && node .",
-    "pack-local-run": "cd /Users/lucasmoreira/www/aptitudehelpers && tsc && cd ./src && find . -name '*.scss' | cpio -pdm ../build && cd ../ && cp package.json build/ && cd build/ && npm pack --pack-destination /tmp && cd ~/www/invoicefy/v2/frontend && npm install --save /tmp/aptitudehelpers-$npm_package_version.tgz && npm run start",
-    "pack-local": "cd /Users/lucasmoreira/www/aptitudehelpers && tsc && cd ./src && find . -name '*.scss' | cpio -pdm ../build && cd ../ && cp package.json build/ && cd build/ && npm pack --pack-destination /tmp && cd ~/www/invoicefy/v2/frontend && npm install --save /tmp/aptitudehelpers-$npm_package_version.tgz"
+    "publish": "npm publish"
   },
   "author": "Lucas Moreira de Souza",
   "author_email": "moreirapontocom@gmail.com",
@@ -19,6 +18,7 @@
   },
   "dependencies": {
     "@firebase/storage": "^0.12.4",
+    "bootstrap": "^5.3.3",
     "dayjs": "^1.11.10",
     "firebase": "^10.11.0",
     "formik": "^2.4.5",
