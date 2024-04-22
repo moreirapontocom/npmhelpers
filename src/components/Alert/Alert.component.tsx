@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import "./Alert.component.scss";
 
 function Alert(props: any) {
@@ -14,7 +15,7 @@ function Alert(props: any) {
 
     return <>
         {props.alert.type && props.alert.type !== "" && <>
-            <div className={`echem-alert alert alert-dismissible shadow-sm fade show alert-float alert-${props.alert.type}`} role="alert">
+            <div className={`custom-alert alert alert-dismissible shadow-sm fade show alert-float alert-${props.alert.type}`} role="alert">
                 <strong><span dangerouslySetInnerHTML={{__html: props.alert.message}}></span></strong>
                 <button type="button" className="btn-close" onClick={() => {
                     setAlert({type: '', message: ''});
