@@ -1,12 +1,12 @@
 {
-  "name": "npmhelpers",
-  "version": "1.2.110",
+  "name": "@moreirapontocom/npmhelpers",
+  "version": "1.2.112",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npm version patch && tsc && node .",
     "build-local": "tsc && node .",
-    "publish": "npm publish"
+    "deploy": "npm publish --access=public"
   },
   "author": "Lucas Moreira de Souza",
   "author_email": "moreirapontocom@gmail.com",
