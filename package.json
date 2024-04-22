@@ -1,6 +1,6 @@
 {
   "name": "@moreirapontocom/npmhelpers",
-  "version": "1.2.120",
+  "version": "1.2.122",
   "description": "",
   "main": "build/index",
   "types": "build/index",
@@ -9,8 +9,15 @@
     "build-local": "tsc && node .",
     "deploy": "npm publish --access=public"
   },
-  "author": "Lucas Moreira de Souza",
-  "author_email": "moreirapontocom@gmail.com",
+  "author": {
+    "name": "Lucas Moreira de Souza",
+    "email": "moreirapontocom@gmail.com",
+    "url": "https://lucasmoreira.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moreirapontocom/npmhelpers.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.11.30",
