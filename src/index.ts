@@ -1,5 +1,6 @@
 // Components
 export { default as Alert } from "./components/Alert/Alert.component";
+export { default as ColumnsMatcher } from "./components/ColumnsMatcher/ColumnsMatcher.component";
 export { default as Confirm } from "./components/Confirm/Confirm.component";
 export { default as DownloadXlsx } from "./components/DownloadXlsx/DownloadXlsx.component";
 export { default as buildXlsx } from "./components/DownloadXlsx/BuildXlsx.component";
@@ -41,6 +42,7 @@ export { default as isValidUrl } from "./helpers/isValidUrl";
 export { default as onlyNumbers } from "./helpers/onlyNumbers";
 export { default as openWhatsappChat } from "./helpers/openWhatsappChat";
 export { default as removeDuplicatesFromArray } from "./helpers/removeDuplicatesFromArray";
+export { default as searchZipcode } from "./helpers/searchZipcode";
 export { default as shareToWhatsapp } from "./helpers/shareToWhatsapp";
 export { default as sleep } from "./helpers/sleep";
 export { default as slugifyString } from "./helpers/slugifyString";

@@ -1,7 +1,56 @@
 # Components
 
 ### Alert
+### ColumnsMatcher
+
+If `columnsFrom` and `columnsTo` have different length, it will show a warning, but you can still use the component.
+
+```typescript
+<ColumnsMatcher
+  columnsFrom={["array","of","columns"]}
+  columnsTo={["columns","to","match"]}
+  fromDescription="Columns from..."
+  toDescription="Columns to..."
+  onMatchColumns={(columns: any) => console.log(columns)}
+/>
+```
+
 ### Confirm
+
+Need to include `ConfirmProvider` (included in this package).
+
+```typescript
+root.render(
+  <React.StrictMode>
+    <ConfirmProvider>
+      <App />
+    </ConfirmProvider>
+  </React.StrictMode>
+);
+```
+
+Usage:
+
+```typescript
+const {setConfirm} = useContext(ConfirmContext);
+
+<button
+  ...
+  onClick={() => {
+    setConfirm({
+      type: "danger", // primary || success || danger || info || warning
+      title: "<Confirm title>",
+      message: "<Confirm message>",
+      buttonLabel: "<Button label>",
+      onConfirm: () => {
+        // Do something
+      },
+    })
+  }}>
+    Button label
+  </button>
+```
+
 ### DownloadXlsx
 ### buildXlsx
 ### Expander
@@ -14,7 +63,7 @@
 <CustomPopover
   header="Header"
   body="body">
-    Alguma coisa aqui dentro
+    ...
 </CustomPopover>
 ```
 
@@ -32,18 +81,17 @@
 
 ### Upload
 
+To read a CSV file and get its content:
 ```typescript
-// To read a CSV file and get its content
+
 <Upload
   accept="text/csv"
   folder=""
   showProgress={BOOLEAN}
   loading={BOOLEAN}
   onUpload={(e: any) => console.log(e)} />
-
-// To read any file and upload to Firebase Storage Bucket
-
 ```
+You can also read any file and upload it to Firebase Storage Bucket. (This feature is working but the doc is not ready yet).
 
 # Contexts
 
@@ -108,8 +156,10 @@ onlyNumbers(phone); // 1805123456
 await searchZipcode("BR_ZIPCODE_HERE").then((response: any) => {
   console.log(response);
 });
+```
 
-// Response
+Response:
+```javascript
 {
   bairro: "<...>"
   cep: "<...>"
