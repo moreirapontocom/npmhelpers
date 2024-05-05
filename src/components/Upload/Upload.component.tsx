@@ -1,8 +1,6 @@
 import { useRef, useState } from "react";
-import { getStorage, ref, getDownloadURL, uploadBytesResumable, } from 'firebase/storage';
-import generateRandomString from "../../helpers/generateRandomString";
-import Separator from "../Separator/Separator.component";
-import Loading from "../Loading/Loading.component";
+import { ref, getDownloadURL, uploadBytesResumable, } from 'firebase/storage';
+import { Loading, Separator, generateRandomString } from "../../";
 
 const Upload = (props: any) => {
   const {
@@ -13,8 +11,6 @@ const Upload = (props: any) => {
     loading,
     onUpload,
   } = props;
-
-  // const storage: any = getStorage(app);
 
   const inputFile: any = useRef<HTMLInputElement>(null);
   const [loadingUploadFile, setLoadingUploadFile] = useState(false);
@@ -44,6 +40,23 @@ const Upload = (props: any) => {
 
     setLoadingUploadFile(true);
     setProgress(0);
+
+    // If we don't want to send the file to storage,
+    // We just return the file details and content
+
+    if (!storage) {
+      const reader = new FileReader();
+      reader.onload = (e: any) => {
+        onUpload({
+          ...fileDetails,
+          content: e.target.result,
+        });
+        setLoadingUploadFile(false);
+        inputFile.current.value = "";
+      };
+      reader.readAsText(file);
+      return;
+    }
 
     const storageRef: any = ref(storage, `${folder}/${generatedName}`);
     const uploadTask: any = uploadBytesResumable(storageRef, file);

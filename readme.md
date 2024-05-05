@@ -32,6 +32,19 @@
 
 ### Upload
 
+```typescript
+// To read a CSV file and get its content
+<Upload
+  accept="text/csv"
+  folder=""
+  showProgress={BOOLEAN}
+  loading={BOOLEAN}
+  onUpload={(e: any) => console.log(e)} />
+
+// To read any file and upload to Firebase Storage Bucket
+
+```
+
 # Contexts
 
 ### AlertContext
@@ -89,6 +102,28 @@ onlyNumbers(phone); // 1805123456
 
 ### openWhatsappChat
 ### removeDuplicatesFromArray
+### searchZipcode
+
+```typescript
+await searchZipcode("BR_ZIPCODE_HERE").then((response: any) => {
+  console.log(response);
+});
+
+// Response
+{
+  bairro: "<...>"
+  cep: "<...>"
+  complemento: "<...>"
+  ddd: "<...>"
+  gia: "<...>"
+  ibge: "<...>"
+  localidade: "<...>"
+  logradouro: "<...>"
+  siafi: "<...>"
+  uf: "<...>"
+}
+```
+
 ### shareToWhatsapp
 ### sleep
 ### slugifyString
