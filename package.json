@@ -1,12 +1,11 @@
 {
   "name": "@moreirapontocom/npmhelpers",
-  "version": "1.2.122",
+  "version": "1.2.123",
   "description": "",
   "main": "build/index",
   "types": "build/index",
   "scripts": {
-    "build": "npm version patch && tsc && node .",
-    "build-local": "tsc && node .",
+    "build": "./npm_builder.sh",
     "deploy": "npm publish --access=public"
   },
   "author": {
