@@ -6,7 +6,6 @@ const CustomModal = (props: any) => {
     show,
     title,
     size,
-    onClose,
   } = props;
 
   const [showModal, setShowModal] = useState(false);
@@ -21,7 +20,7 @@ const CustomModal = (props: any) => {
       {title && title !== "" && <>
         <Modal.Header>
           <Modal.Title>{title}</Modal.Title>
-          <button type="button" className="btn-close" onClick={() => onClose()}></button>
+          <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
         </Modal.Header>
       </>}
 
