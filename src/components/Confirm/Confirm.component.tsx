@@ -52,7 +52,7 @@ const Confirm = (props: any) => {
                     <Separator size={10} />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="outline-secondary" onClick={handleCancel}>Cancelar</Button>
+                    <Button variant="outline-secondary" onClick={handleCancel}>{confirm.buttonCancelLabel || "Cancelar"}</Button>
                     <button type='button' className={`btn btn-${confirm.type}`} onClick={handleConfirm}>
                         <i className={`fas fa-${confirm.type === "danger" ? "exclamation-triangle" : "check-circle"} me-2`}></i>
                         {confirm.buttonLabel}

@@ -42,6 +42,7 @@ const {setConfirm} = useContext(ConfirmContext);
       title: "<Confirm title>",
       message: "<Confirm message>",
       buttonLabel: "<Button label>",
+      buttonCancelLabel: "<Button Cancel label>",
       onConfirm: () => {
         // Do something
       },
