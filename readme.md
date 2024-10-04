@@ -32,7 +32,11 @@ root.render(
 Usage:
 
 ```typescript
+import { Confirm } from "@moreirapontocom/npmhelpers";
+
 const {setConfirm} = useContext(ConfirmContext);
+
+<Confirm />
 
 <button
   ...
