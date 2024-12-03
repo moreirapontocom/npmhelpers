@@ -2,6 +2,7 @@
 export { default as Alert } from "./components/Alert/Alert.component";
 export { default as ColumnsMatcher } from "./components/ColumnsMatcher/ColumnsMatcher.component";
 export { default as Confirm } from "./components/Confirm/Confirm.component";
+export { default as CsvReader } from "./components/CsvReader/CsvReader.component";
 export { default as DownloadXlsx } from "./components/DownloadXlsx/DownloadXlsx.component";
 export { default as buildXlsx } from "./components/DownloadXlsx/BuildXlsx.component";
 export { default as Expander } from "./components/Expander/Expander.component";

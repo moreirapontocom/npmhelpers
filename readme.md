@@ -56,6 +56,22 @@ const {setConfirm} = useContext(ConfirmContext);
   </button>
 ```
 
+### CsvReader
+```typescript
+const [csvRawData, setCsvRawData] = useState(null as any);
+
+<Upload
+  accept="text/csv"
+  onUpload={(e: any) => {
+    setCsvRawData(e.content)
+  }}
+/>
+
+<CsvReader
+  rawData={csvRawData}
+  couterLabel="registros encontrados" />
+```
+
 ### DownloadXlsx
 ### buildXlsx
 ### Expander
