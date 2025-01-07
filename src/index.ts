@@ -12,6 +12,7 @@ export { default as CustomPopover } from "./components/Popover/Popover.component
 export { default as Separator } from "./components/Separator/Separator.component";
 export { default as TextWithTooltip } from "./components/TextWithTooltip/TextWithTooltip.component";
 export { default as Upload } from "./components/Upload/Upload.component";
+export { default as VideoHelper } from "./components/VideoHelper/VideoHelper.component";
 
 // Contexts
 export { AlertContext } from "./context/Alert.context"

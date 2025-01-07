@@ -114,6 +114,22 @@ To read a CSV file and get its content:
 ```
 You can also read any file and upload it to Firebase Storage Bucket. (This feature is working but the doc is not ready yet).
 
+
+### VideoHelper
+
+```typescript
+<VideoHelper
+  hanlerTitle="Handler Title"
+  title="Popup Title"
+  description="Popup Description"
+  videoUrl="VIDEO URL (don't include the embed code)"
+  colorScheme={{
+    backgroundColor: "#5c7ddd",
+    textColor: "white",
+  }}
+/>
+```
+
 # Contexts
 
 ### AlertContext
