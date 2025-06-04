@@ -31,6 +31,7 @@ export { default as currencyFormatter } from "./helpers/currencyFormatter";
 export { default as detectUrlInString } from "./helpers/detectUrlInString";
 export { default as formatBytes } from "./helpers/formatBytes";
 export { default as formatNumberToCurrency } from "./helpers/formatNumberToCurrency";
+export { default as formatPhoneNumber } from "./helpers/formatPhoneNumber";
 export { default as generateGoogleCalendarLink } from "./helpers/generateGoogleCalendarLink";
 export { default as generateRandomNumber } from "./helpers/generateRandomNumber";
 export { default as generateRandomString } from "./helpers/generateRandomString";
